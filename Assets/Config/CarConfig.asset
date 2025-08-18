@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f79f7c5607d43c4a008c6db18deaa48, type: 3}
+  m_Name: CarConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CarConfig
+  bodyPrefab: {fileID: 1691805217323582825, guid: becc2b91493a30648b5d72af867e6547, type: 3}
+  wheelPrefab: {fileID: 6411062922318438105, guid: 23a76e3ec56eea34094e2d86f61a30ad, type: 3}
