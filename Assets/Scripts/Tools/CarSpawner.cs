@@ -16,12 +16,17 @@ namespace Tools
             car.transform.position = transform.position;
             car.transform.rotation = transform.rotation;
 
-            car.body = Instantiate(config.bodyPrefab, car.transform);
-            foreach (var suspension in car.body.Suspensions)
+            car.Body = Instantiate(config.bodyPrefab, car.transform);
+            car.Body.Suspensions = car.Body.GetComponentsInChildren<Suspension>();
+
+            foreach (var suspension in car.Body.Suspensions)
             {
-                suspension.physicsObject = car.body;
-                suspension.config = config.suspensionConfig;
-                suspension.wheel = Instantiate(config.wheelPrefab, suspension.transform);
+                suspension.physicsObject = car.Body;
+                suspension.Config = config.suspensionConfig;
+
+                suspension.Wheel = Instantiate(config.wheelPrefab, suspension.transform);
+                suspension.Wheel.Suspension = suspension;
+                suspension.Wheel.transform.position = suspension.transform.position + suspension.SuspensionDirection * suspension.Config.restPosition;
             }
         }
     }

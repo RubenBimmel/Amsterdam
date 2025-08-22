@@ -26,7 +26,11 @@ namespace Physics
         }
 
         public void ApplyForce(Vector3 force) => ApplyForce(force, Vector3.zero);
-        public void ApplyForce(Vector3 force, Vector3 origin) => Rigidbody.AddForceAtPosition(force, origin);
+        public void ApplyForce(Vector3 force, Vector3 origin)
+        {
+            Rigidbody.AddForceAtPosition(force, origin);
+            Debug.DrawRay(origin, force * 0.001f, Color.blue);
+        }
 
         public Vector3 GetVelocity() => Rigidbody.linearVelocity;
         public Vector3 GetVelocityAtPoint(Vector3 worldPoint) => Rigidbody.GetPointVelocity(worldPoint);

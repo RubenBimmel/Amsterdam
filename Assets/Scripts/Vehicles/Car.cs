@@ -4,6 +4,6 @@ namespace Vehicles
 {
     public class Car : MonoBehaviour
     {
-        public Body body;
+        public Body Body { get; set; }
     }
 }

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d5a08655ff4b4f8d7bb077f70088fe, type: 3}
   m_Name: SpringConfig
   m_EditorClassIdentifier: Assembly-CSharp::Config.SpringConfig
-  stiffness: 7635
-  damping: 250
-  bumpStop: 0.1
-  restPosition: 0.5
-  minLength: 0.1
-  maxLength: 2
+  stiffness: 14000
+  damping: 1000
+  bumpStop: 50000
+  restPosition: 0.25
+  minLength: 0.075
+  maxLength: 0.35

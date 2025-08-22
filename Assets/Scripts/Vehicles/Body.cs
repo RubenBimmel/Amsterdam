@@ -7,8 +7,6 @@ namespace Vehicles
         public float wheelbase;
         public float track;
         
-        private Suspension[] _suspensions;
-
-        public Suspension[] Suspensions => _suspensions ??= GetComponentsInChildren<Suspension>();
+        public Suspension[] Suspensions {get; set;}
     }
 }
