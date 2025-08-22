@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f6f0be1a994d94acc661d0101170c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Wheel
+  mass: 10
   diameter: 0.635
   width: 0.25
 --- !u!1 &4928658968645409769
@@ -73,13 +74,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4928658968645409769}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.635, y: 0.125, z: 0.635}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3694702214472139823}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!33 &8578069690265291188
 MeshFilter:
   m_ObjectHideFlags: 0

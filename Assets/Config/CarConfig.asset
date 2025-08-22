@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CarConfig
   bodyPrefab: {fileID: 1691805217323582825, guid: becc2b91493a30648b5d72af867e6547, type: 3}
   wheelPrefab: {fileID: 6411062922318438105, guid: 23a76e3ec56eea34094e2d86f61a30ad, type: 3}
+  suspensionConfig: {fileID: 11400000, guid: cccf227f9e3cf73499926b5d4f82e8da, type: 2}
